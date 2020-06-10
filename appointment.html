@@ -1,0 +1,88 @@
+<html>
+<head><font size="07" color="indianred" face="sans sarif"><center>Appointment Letter</center></font></head>
+<br><br><br>
+<style>
+p
+{
+	margin-left:00px;
+}
+
+x
+{
+	background-image:no-repeat;
+}
+
+</style>
+
+<script>
+function ValidationEvent() {
+// Storing Field Values In Variables
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var contact = document.getElementById("contact").value;
+// Regular Expression For Email
+var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+// Conditions
+if (name != '' && email != '' && contact != '') {
+if (email.match(emailReg)) {
+if (document.getElementById("male").checked || document.getElementById("female").checked) {
+if (contact.length == 10) {
+alert("All type of validation has done on OnSubmit event.");
+return true;
+} else {
+alert("The Contact No. must be at least 10 digit long!");
+return false;
+}
+} else {
+alert("You must select gender.....!");
+return false;
+}
+} else {
+alert("Invalid Email Address...!!!");
+return false;
+}
+} else {
+alert("All fields are required.....!");
+return false;
+}
+}
+</script>
+<body background="A:\js project\images\index.jpg" >
+<div align="center">
+<div class="container">
+<div class="main">
+<form action="#" method="post" onsubmit="return ValidationEvent()">
+<font size="05" color="deepskyblue">
+<label>Name :</label>
+<input id="name" name="name" placeholder="Name" type="text"><br><br><label>Address :</label>
+<textarea rows="4" cols="50" name="comment" input id="comment">
+Enter text here...</textarea><br><br>
+<label>Contact No. :</label>
+<input id="contact" name="contact" placeholder="Contact No." type="text"><br><br>
+
+
+<label>Email :</label>
+<input id="email" name="email" placeholder="Valid Email" type="text"><br><br>
+<label>DATE :</label>
+<input id="date" name="date"  type="text"><br><br>
+<label>TIMING:</label><br>
+<input id="time" name="Remark" type="radio" value="10:30AM-11:00AM">
+<label>10:30AM-11:00AM</label><br>
+<input id="Hip-Hop" name="Remark" type="radio" value="Hip-Hop">
+<label>12:00PM-12:30PM</label><br>
+<input id="Exllent" name="Remark" type="radio" value="Exllent">
+<label>1:00PM-1:30PM</label><br>
+<input id="Exllent" name="Remark" type="radio" value="Exllent">
+<label>4:00PM-4:30PM</label><br>
+<input id="Exllent" name="Remark" type="radio" value="Exllent">
+<label>5:00PM-5:30PM</label><br>
+<input type="submit" value="Submit">
+</font>
+</form>
+</div>
+</div>
+</div>
+
+<font size="05" color="black"><a href="file:///D:/website/home.html">GO TO HOME</a></font>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<html>
+<head><center>
+<font color="indianred" size="06" face="comic sans ms">FREESTYLE</font></center>
+</head>
+<style>
+
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 13px;
+  margin: 0 2px;
+
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body>
+<center>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="f5.jpg" height="600" width="80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="f1.jpg" height="600" width="80%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="f2.jpg" height="600" width="80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="f3.jpg" height="600" width="80%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="f4.jpg" height="600" width="80%">
+</div>
+
+</div>
+</center>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+  
+</div>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+Freestyle swimming implies to the freedom to choose any stroke style for competitive swimming. The front crawl is most commonly chosen by swimmers, as this provides the greatest speed. During a race, the competitor circles the arms forward in alternation and kicks the feet up and down (flutter kick). Although competitors can choose any motion during the freestyle stroke, it is not common to see someone doing dog paddle, or sidestroke during a race or competition. Stand-alone freestyle events can also be swum using one of the officially regulated strokes (breaststroke, butterfly, and backstroke). For the freestyle part of medley swimming competitions, however, one cannot use breaststroke, butterfly, or backstroke. Front crawl is based on the Trudgen that was improved by Richmond Cavill from Sydney, Australia. Cavill developed the stroke by observing a young boy from the Solomon Islands, Alick Wickham. Cavill and his brothers spread the Australian crawl to England, New Zealand and America. Richmond Cavill used this stroke in 1902 at an International Championships in England to set a new world record by swimming 100 yards (91 m) in 58.4 seconds. Freestyle competitions have also been swum completely and partially in other styles, especially at lower ranking competitions as some swimmers find their backstroke quicker than their front crawl. During the Olympic Games, front crawl is swum almost exclusively during freestyle. Some of the few rules are that swimmers must touch the end of the pool during each length and cannot push off the bottom or hang on the wall or pull on the lane lines during the course of the race. As with all competitive events, false starts are not allowed (the number of false starts depends upon the particular competitive rules for that competition).
+New developments in the sport
+
+Times have consistently dropped over the years due to better training techniques and to new developments in the sport.
+
+In the first four Olympics, competitions were not held in pools, but, rather, in open water (1896– the Mediterranean Sea, 1900– the Seine river, 1904– an artificial lake, 1906– the Mediterranean Sea). The 1904 Olympics freestyle race was the only one ever measured at 100 yards, instead of the usual 100 metres. A 100-metre pool was built for the 1908 Olympics and sat in the center of the main stadium's track and field oval. The 1912 Olympics, held in the Stockholm harbour, marked the beginning of electronic timing.
+
+Male swimmers wore full body suits up until the 1940s, which caused more drag in the water than their modern swimwear counterparts. Also, over the years, some design considerations have reduced swimming resistance making the pool faster, namely proper pool depth, elimination of currents, increased lane width, energy-absorbing racing lane lines and gutters, and the use of other innovative hydraulic, acoustic, and illumination designs.
+
+The 1924 Olympics were the first to use the standard 50 metre pool with marked lanes. In the freestyle, swimmers originally dove from the pool walls, but diving blocks were eventually incorporated at the 1936 Olympics. The tumble turn, better known as the flip turn, was developed in the 1950s. The Trudgen, introduced in England during the 1880s, has been completely supplanted by the front crawl, also known as the Australian crawl. Lane design created in the early 1970s has also cut down on turbulence in water.</p>
+
+
+	
+<form>
+<a href="home1.html"><input type="button" value="GO TO HOME"></a>
+</form>
+</html>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides()
+  {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) 
+   {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+ if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) 
+   {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+       slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+

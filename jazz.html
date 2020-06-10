@@ -1,0 +1,167 @@
+<html>
+<head><center>
+<font color="indianred" size="06" face="comic sans ms">JAZZ</font></center>
+</head>
+<style>
+
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+	  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 13px;
+  margin: 0 2px;
+
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body>
+<center>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="j1.jpg" height="600" width="80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="j5.jpg" height="600" width="80%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="j2.jpg" height="600" width="80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="j3.jpg" height="600" width="80%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="j4.jpg" height="600" width="80%">
+</div>
+
+</div>
+</center>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+  
+</div>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe term jazz dance was first used to describe dances done to the new-fangled jazz music of the early 20th century, but its origin lie in the dances brought from Africa by slaves shipped to America. At that time, it referred to any dance done to jazz music, which included both tap dance and jitterbug. A defining feature was its "free conversation-like style of improvisation." [4]
+
+Beginning in the 1930s and continuing through the 1960s, jazz dance transformed from its street form into a theatre-based performance art.[5][6] During this time, choreographers from other genres experimented with the style.,[5] including George Balanchine, Agnes de Mille, Jack Cole, Hanya Holm, Helen Tamiris, Michael Kidd, Jerome Robbins, and Bob Fosse.[5] All of these choreographers influenced jazz by requiring highly trained dancers, and introducing steps from ballet and contemporary dance.[1][5] In the 1950s, jazz dance was profoundly influenced by Caribbean and Latin American influences introduced by Katherine Dunham.[7]
+New Orleans
+Jazz dancers with company Giordano Dance Chicago perform a routine with classical jazz elements
+
+New Orleans was an incubator of jazz dance because it was a melting pot of so many cultures.
+
+Jazz in New Orleans developed with community life such as brass band funerals and music in park picnics or ball games. The spirit of New Orleans and jazz music connected the performer to the audience, offering a link through which all parties could participate; this allowed for the growth of dance around the city's musical style.[8] In New Orleans, big bands in the 1930s and 1940s made a living by playing in large ballrooms, amusement parks, hotels, and other venues for dancing.[9]
+
+Kinney's Hall or McKenna's Hall, known to ragtime musicians and dancers as Funky Butt Hall,[10] was a church/dance hall that housed many weekend dances. It was popular because of Buddy Bolden and his band, one of the biggest musicians to have an influence on the development of Jazz music, and directly dance. Bolden popularized the ragtime song "Funky Butt", which gave the hall its common name.
+
+Economy Hall, a dance hall located in Treme, near Storyville, where dances were held because of the numerous social aid and pleasure clubs that had events in the hall. These organizations provided a variety of services, including brass band funerals and dances, to New Orleans community.
+
+Although jazz dance is more commonly used to refer to the theatrical style these days, many swing dancers still claim ownership of the term jazz dance. In modern times, many professionals have moved to New Orleans in an attempt to kick-start a revision of the neo-swing dance movement.</p>
+
+
+	
+<form>
+<a href="home1.html"><input type="button" value="GO TO HOME"></a>
+</form>
+</html>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides()
+  {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) 
+   {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+ if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) 
+   {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+       slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+

@@ -1,0 +1,159 @@
+<html>
+<head><center>
+<font color="indianred" size="06" face="comic sans ms">CONTEMPORARY</font></center>
+</head>
+<style>
+
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+	  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 13px;
+  margin: 0 2px;
+
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body>
+<center>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="c1.jpg" height="600" width="80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="c5.jpg" height="600" width="80%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="c2.jpg" height="600" width="80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="c3.jpg" height="600" width="80%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="c4.jpg" height="600" width="80%">
+</div>
+
+</div>
+</center>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+  
+</div>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspContemporary dance is a dance performance genre that developed during the mid twentieth century and has since grown to become one of the dominant genres for formally trained dancers throughout the world, with particularly strong popularity in the U.S. and Europe. Although originally informed by and borrowing from classical, modern, and jazz styles, it has since come to incorporate elements from many styles of dance.[1] Due to its technical similarities, it is often perceived to be closely related to modern dance, ballet and other classical concert dance styles.
+
+In terms of the focus of its technique, contemporary dance tends to combine the strong and controlled legwork of ballet with modern dance's stress on the torso, and also employs contract-release, floor work, fall and recovery, and improvisation characteristic of modern dance.[2] Unpredictable changes in rhythm, speed, and direction are often used, as well. It sometimes also incorporates elements of non-western dance cultures such as elements from African dance including bent knees, or movements from the Japanese contemporary dance Butoh.Dance techniques and movement philosophies employed in contemporary dance may include Contemporary ballet, Dance improvisation, Modern dance styles from United States such as Graham technique, Humphrey-Weidman technique and Horton teschnique, Modern dance of Europe Bartenieff Fundamentals and the dance technique of Isadora Duncan (also see Free dance).
+
+Contemporary dancers train using contemporary dance techniques as well as non-dance related practices such as Pilates, Yoga, the acting practice of Corporeal mime - Étienne Decroux technique and somatic practices such as Alexander technique,[7] Feldenkrais Method, Sullivan Technique and Franklin-Methode, American contemporary techniques such as José Limón technique and Hawkins technique and Postmodern dance techniques such as Contact improvisation and Cunningham technique, and Release technique.
+
+Some well-known choreographers and creators of contemporary dance created schools and techniques of their own. Paul Taylor developed a dance technique called Taylor technique, which is now taught at modern dance schools like The Ailey School in New York City</p>
+
+
+	
+<form>
+<a href="home1.html"><input type="button" value="GO TO HOME"></a>
+</form>
+</html>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides()
+  {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) 
+   {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+ if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) 
+   {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+       slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+

@@ -1,0 +1,99 @@
+<html>
+<head><font size="07" color="indianred" face="sans sarif"><center>REGISTRATION FORM</center></font></head>
+<br><br><br>
+<style>
+p
+{
+	margin-left:00px;
+}
+
+x
+{
+	background-image:no-repeat;
+}
+
+</style>
+
+<script>
+function ValidationEvent() {
+// Storing Field Values In Variables
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var contact = document.getElementById("contact").value;
+// Regular Expression For Email
+var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+// Conditions
+if (name != '' && email != '' && contact != '') {
+if (email.match(emailReg)) {
+if (document.getElementById("male").checked || document.getElementById("female").checked) {
+if (contact.length == 10) {
+alert("All type of validation has done on OnSubmit event.");
+return true;
+} else {
+alert("The Contact No. must be at least 10 digit long!");
+return false;
+}
+} else {
+alert("You must select gender.....!");
+return false;
+}
+} else {
+alert("Invalid Email Address...!!!");
+return false;
+}
+} else {
+alert("All fields are required.....!");
+return false;
+}
+}
+</script>
+<body background="A:\js project\images\index.jpg" bgcolor="lightslategrey">
+<div align="center">
+<div class="container">
+<div class="main">
+<form action="#" method="post" onsubmit="return ValidationEvent()">
+<font size="05" color="deepskyblue">
+<label>Name :</label>
+<input id="name" name="name" placeholder="Name" type="text"><br><br><label>Address :</label>
+<textarea rows="4" cols="50" name="comment" input id="comment">
+Enter text here...</textarea><br><br>
+<label>Contact No. :</label>
+<input id="contact" name="contact" placeholder="Contact No." type="text"><br><br>
+
+
+<label>Email :</label>
+<input id="email" name="email" placeholder="Valid Email" type="text"><br><br>
+<label>Gender :</label><br>
+<input id="male" name="gender" type="radio" value="Male">
+<label>Male</label><br>
+<input id="female" name="gender" type="radio" value="Female">
+<label>Female</label><br>
+<input id="other" name="gender" type="radio" value="other">
+<label>Other</label><br><br>
+
+<label>Dance Forms :</label><br>
+<input id="Classical" name="Remark" type="checkbox" value="Classical">
+<label>Classical</label><br>
+<input id="Hip-Hop" name="Remark" type="checkbox" value="Hip-Hop">
+<label>Hip-Hop</label><br>
+<input id="Contemporary" name="Remark" type="checkbox" value="Contemporary">
+<label>Contemporary</label><br><br>
+<input id="Jazz" name="Remark" type="checkbox" value="Jazz">
+<label>Jazz</label><br>
+<input id="Salsa" name="Remark" type="checkbox" value="Salsa">
+<label>Salsa</label><br>
+<input id="Free Style" name="Remark" type="checkbox" value="Free Style">
+<label>Free Style</label><br><br>
+<input id="Bollywood" name="Remark" type="checkbox" value="Bollywood">
+<label>Bollywood</label><br>
+
+<input type="submit" value="Submit">
+</font>
+</form>
+</div>
+</div>
+</div>
+
+<a href="home1.html"><input type="button" value="GO TO HOME"></a>
+</body>
+</html>

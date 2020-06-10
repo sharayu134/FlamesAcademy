@@ -1,0 +1,168 @@
+<html>
+<head><center>
+<font color="indianred" size="06" face="comic sans ms">SALSA</font></center>
+</head>
+<style>
+
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+	  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 13px;
+  margin: 0 2px;
+
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body>
+<center>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="s1.jpg" height="600" width="80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="s5.jpg" height="600" width="80%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="s2.jpg" height="600" width="80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="s3.jpg" height="600" width="80%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="s4.jpg" height="600" width="80%">
+</div>
+
+</div>
+</center>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+  
+</div>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe name salsa (mixture) has been described as a dance since the mid-1970s. The use of the term for the dance started in New York. It evolved from earlier Cuban dance forms such as Son, Son Montuno, Cha cha cha and Mambo which were popular in the Caribbean, Latin America and the Latino communities in New York since the 1940s. Salsa, like most music genres has gone through a lot of variation through the years and incorporated elements of Afro-Cuban and Afro-Caribbean dances such as Guaguanco and Pachanga. Different countries of the Caribbean and Latin America have distinct salsa styles of their own, such as Cuban, Colombian, Puerto Rican, L.A. and New York styles.
+
+There is some controversy surrounding the origins of the word salsa. Some claim that it was based on a cry shouted by musicians while they were playing their music. Others believe that the term was created by record labels to better market their music, who chose the word "salsa" because of its spicy and hot connotations. Still others believe the term came about because salsa dancing and music is a mixture of different styles, just like salsa or "sauce" in Latin American countries is a mixture of different ingredients.
+Description
+
+In many styles of salsa dancing, as a dancer shifts their weight by stepping, the upper body remains level and nearly unaffected by the weight changes. Weight shifts cause the hips to move. Arm and shoulder movements are also incorporated. The Cuban Casino style of salsa dancing involves significant movement above the waist, with up-and-down shoulder movements and shifting of the ribcage.
+
+The arms are used by the "lead" dancer to communicate or signal the "follower," either in "open" or "closed" position. The open position requires the two dancers to hold one or both hands, especially for moves that involve turns, putting arms behind the back, or moving around each other, to name a few examples. In the closed position, the leader puts the right hand on the follower's back, while the follower puts the left hand on the leader's shoulder.
+
+In the original Latin America form, the forward/backward motion of salsa is done in diagonal or sideways with the 3-step weight change intact.
+
+In some styles of salsa, such as the New York style, the dancers remain mostly in front of one another (switching places), while in Latin American styles, such as Cuban style, the dancers circle around each other, sometimes in 3 points. This circular style is inspired by Cuban Son, specifically to the beat of Son Montuno in the 1920s. However, as it is a popular music, it is open to improvisation and thus it is continuously evolving. Modern salsa styles are associated and named to the original geographic areas that developed them. There are often devotees of each of these styles outside of their home territory. Characteristics that may identify a style include: timing, basic steps, foot patterns, body movement, turns and figures, attitude, dance influences and the way that partners hold each other. The point in a musical bar music where a slightly larger step is taken (the break step) and the direction the step moves can often be used to identify a style.
+
+Incorporating other dance styling techniques into salsa dancing has become very common, for both men and women: shimmies, leg work, arm work, body movement, spins, body isolations, shoulder shimmies, rolls, even hand styling, acrobatics and lifts.
+
+Latin American styles originate from Puerto Rico, Cuba and surrounding Caribbean islands.</p>
+
+
+	
+<form>
+<a href="home1.html"><input type="button" value="GO TO HOME"></a>
+</form>
+</html>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides()
+  {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) 
+   {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+ if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) 
+   {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+       slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+

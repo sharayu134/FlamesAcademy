@@ -1,0 +1,162 @@
+<html>
+<head><center>
+<font color="indianred" size="06" face="comic sans ms">HIP-HOP</font></center>
+</head>
+<style>
+
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 13px;
+  margin: 0 2px;
+
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body background="D:\website\facback.jpg">
+<center>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="h5.jpg" height="600" width="80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="h1.jpg" height="600" width="80%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="h2.jpg" height="600" width="80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="h3.jpg" height="600" width="80%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="h4.png" height="600" width="80%">
+</div>
+
+</div>
+</center>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+  
+</div>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+The History of Hip-Hop dance encompasses the people and events since the late 1960s that have contributed to the development of the early hip-hop dance styles: uprock, breaking, locking, roboting, boogaloo, and popping. Black Americans and Latino Americans created uprock and breaking in New York City. Black Americans in California created locking, roboting, boogaloo, and popping—collectively referred to as the funk styles. All of these dance styles are different stylistically. They share common ground in their street origins and in their improvisational nature.
+
+More than 50 years old, hip-hop dance became widely known after the first professional street-based dance crews formed in the 1970s in the United States. The most influential groups were Rock Steady Crew, New York City Breakers, The Lockers, and The Electric Boogaloos who are responsible for the spread of breaking, locking, and popping respectively. The Brooklyn-based dance style uprock influenced breaking early in its development. Boogaloo gained more exposure because it is the namesake of the Electric Boogaloos crew. Uprock, roboting, and boogaloo are respected dance styles but none of them are as mainstream or popular as breaking, locking, and popping.
+
+Parallel with the evolution of hip-hop music, hip-hop social dancing emerged from breaking and the funk styles into different forms. Dances from the 1990s such as the Running Man, the Worm, and the Cabbage Patch entered the mainstream and became fad dances. After the millennium, newer social dances such as the Cha Cha Slide and the Dougie also caught on and became very popular.
+
+Hip-hop dance is not a studio-derived style. Street dancers developed it in urban neighborhoods without a formal process. All of the early substyles and social dances were brought about through a combination of events including inspiration from James Brown, DJ Kool Herc's invention of the break beat, the formation of dance crews, and Don Cornelius' creation of the television show Soul Train.</p>
+
+
+
+	
+<form>
+<a href="home1.html"><input type="button" value="GO TO HOME"></a>
+</form>
+</html>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides()
+  {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) 
+   {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+ if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) 
+   {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+       slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
